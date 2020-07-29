@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pm0-Le-NGD">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pm0-Le-NGD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--UNIKA SERVICE-->
+        <!--Perfecto-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Unikaservice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Perfecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,24 +37,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="UNIKA SERVICE" id="fIP-NG-byO">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="fastForward" id="V9W-pi-xlH">
-                                <connections>
-                                    <action selector="forward:" destination="BYZ-38-t0r" id="oYz-we-JiK"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="refresh" id="ldD-9g-Bf5">
-                                <connections>
-                                    <action selector="reload:" destination="BYZ-38-t0r" id="ccT-Jb-uhD"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="rewind" id="10w-h6-UgP">
-                                <connections>
-                                    <action selector="back:" destination="BYZ-38-t0r" id="0ig-yh-9dE"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                    <navigationItem key="navigationItem" title="Perfecto" largeTitleDisplayMode="always" id="fIP-NG-byO">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="ldD-9g-Bf5">
+                            <connections>
+                                <action selector="reload:" destination="BYZ-38-t0r" id="ccT-Jb-uhD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="webView" destination="HwV-Ni-e0y" id="RoV-m4-DfR"/>

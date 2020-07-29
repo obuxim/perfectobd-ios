@@ -18,7 +18,7 @@ class MainViewController: UIViewController {
     //
     // PROPERTIES
     //
-    let request: URLRequest = URLRequest(url: URL(string: "http://www.unikaservice.dk")!)
+    let request: URLRequest = URLRequest(url: URL(string: "https://www.perfectobd.com")!)
     
     //
     // CLASS DEFINED METHODS
@@ -32,18 +32,8 @@ class MainViewController: UIViewController {
     //
     //  ACTIONS
     //
-    @IBAction func back(_ sender: Any) {
-        if webView.canGoBack {
-            webView.goBack()
-        }
-    }
     @IBAction func reload(_ sender: Any) {
         webView.reload()
-    }
-    @IBAction func forward(_ sender: Any) {
-        if webView.canGoForward {
-            webView.goForward()
-        }
     }
     
 }
